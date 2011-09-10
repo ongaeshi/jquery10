@@ -1,0 +1,40 @@
+body {
+    background-color: Black;
+    color: White;
+}
+
+#main {
+    background-color: White;
+    background-image: url(../images/bg.gif); /* 背景画像を表示 */
+    color: Black;
+    padding: 5px;
+}
+
+img {
+    float: right;		/* 右寄せ */
+}
+
+p {
+    background-color: #cff;
+    border: 1px solid #ccf;
+    margin: 5px;		/* 外側 */
+    padding: 5px;		/* 内側 */
+    font-size: smaller;
+    width: 300px;		/* 幅を小さくすると表示範囲が狭まる */
+}
+
+li {
+    list-style-type: none;	/* リストの点(・)を消す */
+    float: left;		/* 左寄せ */
+    padding: 5px;		/* リスト間が広がる */
+    font-size: smaller;
+}
+
+.navi {
+    color: #0ff;
+}
+
+a:hover {
+    background-color: #ccf;
+    color: Black;
+}
