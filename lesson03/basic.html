@@ -3,11 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>JavaScriptの基本</title>
-    <script text="text/javascript">
-var msg = 'こんにちは！世界';
-window.alert(msg);
-    </script>
-
+    <!-- 閉じタグは省略できないので注意！ -->
+    <script src="external.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -15,10 +12,7 @@ window.alert(msg);
 
     <!-- ここに<script>を置くと、bodyタグのロードが終わった後、スクリプトが走る。 -->
     <!-- JavaScriptの基本を・・・が表示された後、alertが表示される。 -->
-<!--     <script text="text/javascript"> -->
-<!-- var msg = 'こんにちは！世界'; -->
-<!-- window.alert(msg); -->
-<!--     </script> -->
+    <!-- <script src="external.js" type="text/javascript"></script> -->
   </body>
 
 </html>
