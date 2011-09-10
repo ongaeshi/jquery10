@@ -1,12 +1,16 @@
+/* タグ名で指定する */ 
 body {
     background-color: Black;
     color: White;
 }
 
+/* id属性の値で指定する */ 
 #main {
     background-color: White;
     background-image: url(../images/bg.gif); /* 背景画像を表示 */
-    color: Black;
+    color: Black;			     /*↓も同じ意味*/
+    /* color: #000; */
+    /* color: rgb(0%, 0%, 0%); */
     padding: 5px;
 }
 
@@ -14,7 +18,7 @@ img {
     float: right;		/* 右寄せ */
 }
 
-p {
+#main p {
     background-color: #cff;
     border: 1px solid #ccf;
     margin: 5px;		/* 外側 */
@@ -30,11 +34,30 @@ li {
     font-size: smaller;
 }
 
-.navi {
+/* クラス属性の値で指定する */
+a.navi {
     color: #0ff;
 }
 
-a:hover {
+/* ハイパーリンクの細やかなスタイルを設定する */
+/*
+link .. 未訪問
+visited .. 訪問済み
+hover .. マウスをあてた
+active .. クリックした
+
+link -> visited -> hover -> active の順番じゃないと駄目！
+*/
+a:hover {			/* 擬似クラス */
     background-color: #ccf;
     color: Black;
 }
+a:visited {
+    color: Gray;
+}
+
+/* 複数の要素をまとめて指定する */
+div, p {
+    font-size: 10px;
+}
+
