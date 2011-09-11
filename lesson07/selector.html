@@ -7,7 +7,10 @@
     <script type="text/javascript">
 $(function() {
   $('h2').css('background-color', 'Aqua');
-  $('#env a').css('background-color', 'Lime'); // id:envの下のaタグに対してcssを設定
+  // $('#env a').css('background-color', 'Lime'); // id:envの下のaタグに対してcssを設定
+  $('#env > a').css('background-color', 'Lime'); 
+  // $('#xml + li').css('background-color', 'Aqua'); // 次
+  $('#xml ~ li').css('background-color', 'Aqua'); // 以降全て
 });
     </script>
   </head>
@@ -18,6 +21,13 @@ $(function() {
       <a href="http://www.wings.msn.to/">（詳細解説ページへ）</a>
       <p>PHPのバイナリファイルは、<a href="http://www.php.net/">こちら</a>から入手してください。
     </div>
+
+    <ul id="list">
+      <li id="html">HTML5基礎</li>
+      <li id="xml">基礎XML</li>
+      <li id="js">JavaScript本格入門</li>
+      <li id="php">独習PHP 第2版</li>
+    </ul>
   </body>
 </html>
 
