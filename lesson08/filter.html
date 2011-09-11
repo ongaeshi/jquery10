@@ -6,12 +6,41 @@
     <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
     <script type="text/javascript">
 $(function() {
-  $('ul > li:first').css('background-color', 'Aqua');
-  $('ul > li:last').css('background-color', 'Yellow');
-  // $('#entry > li:last').css('background-color', 'Yellow'); // これだと独習の方に
-  $('li:contains("XML")').css('border', 'solid 2px Blue');
-  $('ul > li:first-child').css('color', 'Red');
-  $('ul > li:last-child').css('color', 'Blue');
+  // $('ul > li:first').css('background-color', 'Aqua');
+  // $('ul > li:last').css('background-color', 'Yellow');
+  // // $('#entry > li:last').css('background-color', 'Yellow'); // これだと独習の方に
+  // $('li:contains("XML")').css('border', 'solid 2px Blue');
+  // $('ul > li:first-child').css('color', 'Red');
+  // $('ul > li:last-child').css('color', 'Blue');
+
+  // stripe 
+  // $('#entry > li:even').css('background-color', 'Aqua');
+  // $('#entry > li:odd').css('background-color', 'Lime');
+
+  // $('li:even').css('background-color', 'Aqua');
+  // $('li:odd').css('background-color', 'Lime');
+
+  // $('#entry li:eq(2)').css('background-color', 'Aqua');
+  // $('li:eq(2)').css('background-color', 'Aqua');
+
+  // $('#entry li:lt(2)').css('background-color', 'Aqua');
+  // $('#entry li:gt(2)').css('background-color', 'Lime');
+
+  $('#book td:empty').css('background-color', 'Gray');
+  $('#book td:parent').css('background-color', 'Aqua');
+
+  $('p:has(cite)').css('background-color', 'Aqua');
+  $('p:has(#a)').css('background-color', 'Aqua');
+
+  //$('#books > li:nth-child(3)').css('background-color', 'Aqua');
+
+  //$('#books > li:nth-child(3n)').css('background-color', 'Aqua');
+
+  $('#books > li:nth-child(3n+1)').css('background-color', 'Aqua');
+  $('#books > li:nth-child(3n+2)').css('background-color', 'Maroon');
+  $('#books > li:nth-child(3n)').css('background-color', 'Gray');
+
+  $('p > img:only-child').css('border', 'solid 5px Aqua');
 });
     </script>
   </head>
@@ -29,6 +58,42 @@ $(function() {
       <li id="js_master">JavaScriptマスター</li>
       <li id="php_app">上級PHPアプリケーション開発</li>
     </ul>
+
+    <table id="book" border="1">
+      <tr><th>タイトル</th><th>付録CD</th></tr>
+      <tr><td>10日でおぼえるPHP5</td><td>○</td></tr>
+      <tr><td>JavaScript本格入門</td><td></td></tr>
+      <tr><td>改訂3版　基礎PHP/td><td>○</td></tr>
+    </table>
+
+    <p>PHPのバイナリファイルは、本家サイトから入手してください。</p>
+    <p>詳しくは<cite>サーバサイド環境構築設定 - WINGS</cite>を参照ください。</p>
+    <p>ajaf <span id="a">dafa</span>safja。</p>
+    
+    <ul id="books">
+      <li id="html">HTML5基礎</li>
+      <li id="xml">基礎XML</li>
+      <li id="js">JavaScript本格入門</li>
+      <li id="php">独習PHP 第2版</li>
+      <li id="html_css">HTML／CSS最新完全ガイド</li>
+      <li id="xml_smp">XML実践テクニック集</li>
+      <li id="js_master">JavaScriptマスター</li>
+      <li id="php_app">上級PHPアプリケーション開発</li>
+    </ul>
+
+    <p>
+      <img src="../images/self_aspnet_logo.jpg" />
+    </p>
+
+    <p>
+      <img src="../images/vs_guide.jpg" />
+      <img src="../images/vs_guide_logo.jpg" />
+    </p>
+
+    <p>
+      <img src="../images/self_php_logo.jpg" />
+      独習PHP 第2版
+    </p>
   </body>
 </html>
 
