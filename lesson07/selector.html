@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>セレクター</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('h2').css('background-color', 'Aqua');
+  $('#env a').css('background-color', 'Lime'); // id:envの下のaタグに対してcssを設定
+});
+    </script>
+  </head>
+
+  <body>
+    <div id="env">
+      <h2>環境設定について</h2>
+      <a href="http://www.wings.msn.to/">（詳細解説ページへ）</a>
+      <p>PHPのバイナリファイルは、<a href="http://www.php.net/">こちら</a>から入手してください。
+    </div>
+  </body>
+</html>
+
