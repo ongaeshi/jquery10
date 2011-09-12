@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <title>CSS</title>
     <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <style>
+      .sample {
+        border: 2px double Aqua;
+        background-color: Yellow;
+        color: Red;
+      }
+
+      .sample2 {
+        color: Blue;
+        font-size: large;
+      }
+    </style>
     <script type="text/javascript">
 $(function() {
   $('li.js').css('background-color', 'Yellow');  // <li class="js">
+
   window.alert("jsクラスの背景色は" + $('li.js').css('background-color') );
+
+  // ハッシュを使ってまとめてスタイル設定
+  // ハッシュ形式の時は、ハイフン(background-color)ではなくcamelCase(backgroundColor)で表現すること。
+  // $('li.js').css({
+  //   border: '2px double Green',
+  //   backgroundColor: 'Yellow',
+  //   color: 'Red'
+  // });
+
+  window.alert("addClass('sample')");
+  $('li.js').addClass('sample');
+
+  window.alert("addClass('sample sample2')");
+  $('li.js').addClass('sample sample2');
+  
+  window.alert("removeClass('sample')");
+  $('li.js').removeClass('sample');
+
+  window.alert("toggleClass('sample2')");
+  $('li.js').toggleClass('sample2');
 });
     </script>
   </head>
