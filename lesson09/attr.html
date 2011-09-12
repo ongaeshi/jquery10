@@ -6,9 +6,17 @@
     <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
     <script type="text/javascript">
 $(function() {
-  $(':header').css('background-color', 'Aqua');
-  $('a[target]').css('background-color', 'Yellow');
+  $(':header').css('background-color', 'Aqua');  // 見出しを取り出す
+  //$('a[target]').css('background-color', 'Yellow');
   $('a[target="_blank"]').css('background-color', 'Aqua');
+  //$('a[target!="_blank"]').css('background-color', 'Aqua');
+  //$('a[href $= ".jp/"]').css('background-color', 'Aqua'); // 後方一致 (^前方 $後方一致　*部分一致)
+  //$('a[href ^= "http://"][target = "other"]').css('background-color', 'Aqua'); // 属性フィルターの組み合わせ
+  //$('a:not([dummy])').css('background-color', 'Aqua'); // not(否定)
+
+  $(':text').css('background-color', 'Aqua'); // フォームは専用のセレクト構文がある
+
+  $('label:has(:checked)').css('background-color', 'Lime'); // フォームの状態で絞込み(本来この手の関数はコールバック時に呼ぶ)
 });
     </script>
   </head>
@@ -16,8 +24,15 @@ $(function() {
     <h2 id="caption">参考サイト</h2>
     <ul>
       <li><a href="http://codezine.jp/" target="other">CodeZine</a></li>
-      <li><a href="http://www.web-deli.com" target="_blank">WebDeli</a></li>
+      <li><a href="http://www.web-deli.com/" target="_blank" dummy="a">WebDeli</a></li>
     </ul>
+
+    <h2>フォーム</h2>
+    <form>
+      <label>氏名：<input type="text" /></label> <br />
+      <label><input type="radio" name="gender" value="m" />男性</label>
+      <label><input type="radio" name="gender" value="f" checked="checked" />女性</label>
+    </form>
   </body>
 </html>
 
