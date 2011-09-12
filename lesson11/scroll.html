@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>属性</title>
+<style type="text/css">
+.desc { 
+  width: 500px;
+  height: 250px;
+  background-color: Aqua;
+} 
+</style> 
+<script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('#jq').addClass('desc');n
+  var _p = $(window);  // もとのオブジェクトをjQueryオブジェクトで包み込むことで、jQueryの機能を使えるようになる。
+  // '_p = $(window);'のように変数格納しておくと、余計な関数呼び出しが無くなり効率的。
+  _p.scrollTop('100');
+  _p.scrollLeft('150');
+  window.alert(_p.scrollTop() + '×' + _p.scrollLeft());
+});
+</script>
+</head>
+<body>
+<h2>jQueryについて</h2>
+<div id="jq">
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  </p>
+</div>
+</body>
+</html>

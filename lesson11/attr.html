@@ -7,6 +7,20 @@
     <script type="text/javascript">
 $(function() {
   $('img:not([title])').attr('title', 'ロゴ画像');
+
+  $('#html').attr({
+    src: '../images/html5_logo.jpg',
+    alt: 'ロゴ',
+    width: '160',
+    height: '60',
+    title: 'ロゴ画像',
+  });
+
+  $('#cz').removeAttr('href'); // 属性削除
+
+  $('img.new').height(10);
+  $('img.new').width(20);
+  window.alert( $('img.new').height() + 'x' + $('img.new').width() );
 });
     </script>
   </head>
@@ -14,6 +28,14 @@ $(function() {
   <body>
     <p><img src="../images/html5_logo.jpg" title="HTML5基礎" /></p>
     <p><img src="../images/self_php_logo.jpg" /></p>
+    <p><img id="html" /></p>
+
+    <p><a href="http://www.wings.msn.to/">サーバーサイド技術の学び舎</a></p>
+    <p><a id="cz" href="http://codezine.jp/">CodeZine</a></p>
+
+    <p><img src="../images/html5_logo.jpg" class="new" /></p>
+    <p><img src="../images/self_php_logo.jpg" /></p>
+    <p><img src="../images/js_logo.jpg" class="new" /></p>
   </body>
 </html>
 
