@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('li.js').css('background-color', 'Yellow');  // <li class="js">
+  window.alert("jsクラスの背景色は" + $('li.js').css('background-color') );
+});
+    </script>
+  </head>
+
+  <body>
+    <ul>
+      <li class="js">JavaScript本格入門</li>
+      <li class="js">10日でおぼえるjQuery入門教室</li>
+      <li class="html">HTML5基礎</li>
+    </ul>
+  </body>
+</html>
+
