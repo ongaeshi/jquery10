@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>属性フィルター</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $(':header').css('background-color', 'Aqua');
+  $('a[target]').css('background-color', 'Yellow');
+  $('a[target="_blank"]').css('background-color', 'Aqua');
+});
+    </script>
+  </head>
+  <body>
+    <h2 id="caption">参考サイト</h2>
+    <ul>
+      <li><a href="http://codezine.jp/" target="other">CodeZine</a></li>
+      <li><a href="http://www.web-deli.com" target="_blank">WebDeli</a></li>
+    </ul>
+  </body>
+</html>
+
