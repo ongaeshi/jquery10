@@ -18,8 +18,15 @@
     <script type="text/javascript">
 $(function() {
   $('p').wrap('<div class="wp"></div>');   // <p>を<div>で囲む
-  $('h2').replaceWith('<div>おすすめ書籍</div>'); // <h2>を<div>で置き換える
-  $('#site').remove(); // '#site'要素を削除
+  //$('p').wrapAll('<div class="wp"></div>');   // まとめて囲む
+  //$('p').wrapInner('<div class="wp"></div>');   // 要素の中身を囲む
+	  
+  //$('h2').replaceWith('<div>おすすめ書籍</div>'); // <h2>を<div>で置き換える
+  $('<div>おすすめ書籍</div>').replaceAll('h2'); // オブジェクト引数の順番が逆転したもの
+
+  //$('#site').remove(); // '#site'要素を削除
+  $('#site').empty();    // '#site'の中身を削除
+  $('p').unwrap();       // <p>を包んでいる要素を削除
 });
     </script>
   </head>
@@ -28,6 +35,7 @@ $(function() {
     <h2>参考書籍</h2>
     <p>JavaScript本格入門</p>
     <p>10日でおぼえるjQuery入門</p>
+    <a href="day10_.html">(10日で覚えるシリーズ)</a> // wrapAllの時、追い出される
     <p>HTML５基礎</p>
     <div id="site">by WINGSプロジェクト</div>
   </body>
