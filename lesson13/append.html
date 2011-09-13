@@ -9,10 +9,26 @@
     <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
     <script type="text/javascript">
 $(function() {
-  $('<li>三輪車</li>').prependTo('#car'); // '#carの子要素'の先頭に要素を追加
-  $('<li>オートバイ</li>').appendTo('#car'); // '#carの子要素'の末尾に要素を追加
-  $('<pre>ベビーカー</pre>').insertBefore('#car'); // '#car'の前に要素を追加
-  $('<pre>自動車</pre>').insertAfter('#car'); // '#car'の後ろに要素を追加
+  //$('<li>三輪車</li>').prependTo('#car'); // '#carの子要素'の先頭に要素を追加
+  //$('<li>オートバイ</li>').appendTo('#car'); // '#carの子要素'の末尾に要素を追加
+  //$('<p id="baby">ベビーカー</p>').insertBefore('#car'); // '#car'の前に要素を追加
+  //$('<p>自動車</p>').insertAfter('#car'); // '#car'の後ろに要素を追加
+
+  //window.alert('今ある要素を別の場所に移動する');
+  //$('#baby').insertAfter('#car');
+
+  // 要素を挿入する、もう一つの方法
+  // $('#car').prepend('<li>三輪車</li>');
+  // $('#car').append('<li>オートバイ</li>');
+  // $('#car').before('<p id="baby">ベビーカー</p>');
+  // $('#car').after('<p>自動車</p>');
+
+  // メソッドチェーン
+  $('#car')
+    .prepend('<li>三輪車</li>')
+    .append('<li>オートバイ</li>')
+    .before('<p id="baby">ベビーカー</p>')
+    .after('<p>自動車</p>');
 });
     </script>
   </head>
