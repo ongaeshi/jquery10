@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>イベント</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('#home')
+    .mouseover(function() {
+      $(this).attr('src', '../images/open_home.gif');
+    })
+    .mouseout(function() {
+      $(this).attr('src', '../images/home.gif');
+    })
+});
+    </script>
+  </head>
+
+  <body>
+    <p>ホームページはこちら
+      <img id="home" src="../images/home.gif" alt="ホームへ" /></p>
+  </body>
+</html>
+
