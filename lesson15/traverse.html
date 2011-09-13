@@ -27,7 +27,11 @@ $(function() {
     .css('border', 'solid 1px Red')
     .end()
     .children()
-    .css('font-size', 'x-small')
+    .css('font-size', 'x-small');
+
+  $('#list')
+    .children().css('background-color', 'Aqua')
+    .andSelf().css('border', 'solid 1px Red');  // #list と #list.children 両方に枠線を追加
 });
     </script>
   </head>
@@ -48,6 +52,12 @@ $(function() {
 	<div>妹</div>
       </div>
     </div>
+
+    <ul id="list">
+      <li id="js">JavaScript本格入門</li>
+      <li id="jq">10日で覚えるjQuery入門教室</li>
+      <li id="html">HTML5基礎</li>
+    </ul>
   </body>
 </html>
 
