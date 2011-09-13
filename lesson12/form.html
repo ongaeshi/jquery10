@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>テキスト</title>
+<script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+  window.alert($('input:text').val());
+  window.alert($('select').val());
+  window.alert($('textarea').val());
+  window.alert($('input:submit').val());
+
+  $('input:text').val('240時間で覚えるjQuery');
+});
+</script>
+</head>
+<body>
+<form>
+  <label>タイトル：
+    <input type="text" id="title" name="title"
+      value="10日でおぼえるjQuery入門教室" /></label><br />
+  <label>出版社：
+    <select id="publish" name="publish">
+      <option value="se" >翔泳社</option>
+      <option value="gh">技術評論社</option>
+      <option value="sw">秀和システム</option>
+    </select>
+  </label><br />
+  <label>概要：
+    <textarea id="memo" name="memo" cols="40" rows="3">jQueryを初めて学ぶ方のための入門書。きっちりと基本が身につきます。</textarea>
+  </label><br />
+  <input type="submit" id="send" value="送信" />
+</form>
+</body>
+</html>

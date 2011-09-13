@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>タイトル</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('#result_text').text('<a href="http://www.wings.msn.to/">WINGS</a>');
+  $('#result_html').html('<a href="http://www.wings.msn.to/">WINGS</a>');
+
+  window.alert($('#get_test li').text());
+  window.alert($('#get_test li').html());
+});
+    </script>
+  </head>
+
+  <body>
+    <ul>
+      <li id="result_text"></li>
+      <li id="result_html"></li>
+    </ul>
+
+    <ul id="get_test">
+      <li><a href="http:/codezine.jp/">CodeZine</a></li>
+      <li><a href="http://www.wings.msn.to/">WINGS</a></li>
+      <li><a href="http://www.web-deli.com/">WebDeli</a></li>
+    </ul>
+  </body>
+</html>
+
