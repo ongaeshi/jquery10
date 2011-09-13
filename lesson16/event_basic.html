@@ -5,14 +5,25 @@
     <title>イベント</title>
     <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
     <script type="text/javascript">
+// $(function() {
+//   $('#home')
+//     .mouseover(function() {
+//       $(this).attr('src', '../images/open_home.gif');
+//     })
+//     .mouseout(function() {
+//       $(this).attr('src', '../images/home.gif');
+//     })
+// });
+
+// 別の書き方
 $(function() {
+  var onmouseover = function() { $(this).attr('src', '../images/open_home.gif'); }
+    , onmouseout  = function() { $(this).attr('src', '../images/home.gif'); }
+  ;
+
   $('#home')
-    .mouseover(function() {
-      $(this).attr('src', '../images/open_home.gif');
-    })
-    .mouseout(function() {
-      $(this).attr('src', '../images/home.gif');
-    })
+    .mouseover(onmouseover)
+    .mouseout(onmouseout);
 });
     </script>
   </head>
