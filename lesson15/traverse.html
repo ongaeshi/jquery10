@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>検索</title>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('#me')
+    .css('font-weight', 'bold')
+    .prev()
+    .css('background-color', 'Pink')
+    .end()
+    .prevAll()
+    .css('color', 'Blue')
+    .end()
+    .next()
+    .css('background-color', 'Yellow')
+    .end()
+    .nextAll()
+    .css('color', 'Red')
+    .end()
+    .siblings()                         // 全ての兄弟
+    .css('font-style', 'italic')
+    .end()
+    .parent()
+    .css('border', 'solid 1px Red')
+    .end()
+    .children()
+    .css('font-size', 'x-small')
+});
+    </script>
+  </head>
+
+  <body>
+    <div>
+      じいじ
+      <div>
+	パパ
+	<div>おにいちゃん</div>
+	<div>おねえちゃん</div>
+	<div id="me">わたし
+	  <div>ポチ
+	    <div>ミケ</div>
+	  </div>
+	</div>
+	<div>弟</div>
+	<div>妹</div>
+      </div>
+    </div>
+  </body>
+</html>
+
