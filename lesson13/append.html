@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>要素の追加</title>
+    <style type="text/css">
+#car { background-color: Yellow; }
+    </style>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('<li>三輪車</li>').prependTo('#car'); // '#carの子要素'の先頭に要素を追加
+  $('<li>オートバイ</li>').appendTo('#car'); // '#carの子要素'の末尾に要素を追加
+  $('<pre>ベビーカー</pre>').insertBefore('#car'); // '#car'の前に要素を追加
+  $('<pre>自動車</pre>').insertAfter('#car'); // '#car'の後ろに要素を追加
+});
+    </script>
+  </head>
+
+  <body>
+    <ul id="car">
+      <li>自転車</li>
+    </ul>
+  </body>
+</html>
+
