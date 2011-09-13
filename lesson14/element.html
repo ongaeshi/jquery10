@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>要素の追加</title>
+    <style type="text/css">
+.wp {
+  border: solid 2px Red;
+}
+
+#site {
+  background-color: Yellow;
+  width:  300px;
+  height: 20px;
+}
+    </style>
+    <script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+    <script type="text/javascript">
+$(function() {
+  $('p').wrap('<div class="wp"></div>');   // <p>を<div>で囲む
+  $('h2').replaceWith('<div>おすすめ書籍</div>'); // <h2>を<div>で置き換える
+  $('#site').remove(); // '#site'要素を削除
+});
+    </script>
+  </head>
+
+  <body>
+    <h2>参考書籍</h2>
+    <p>JavaScript本格入門</p>
+    <p>10日でおぼえるjQuery入門</p>
+    <p>HTML５基礎</p>
+    <div id="site">by WINGSプロジェクト</div>
+  </body>
+</html>
+
