@@ -1,2 +1,4 @@
-// template.js
+$(function() {
+});
+
 
