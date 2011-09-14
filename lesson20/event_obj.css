@@ -1,0 +1,17 @@
+.context {
+  padding: 5px;
+  position: absolute;
+  display: none;
+  background-color: Silver;
+  font-size: smaller;
+}
+
+.context li {
+  list-style-type: none;
+  line-height: 150%;
+}
+
+.context li a {
+  text-decoration: none;
+  color: Black;
+}
