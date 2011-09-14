@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>live</title>
+<script type="text/javascript" src="../jquery-1.6.1.min.js"></script>
+<script type="text/javascript">
+$(function () {
+  $('.incre').live(
+    'click',
+    function() {
+      $('<input type="button" class="incre" value="追加" />').appendTo('#fm');
+    }
+  );
+});
+</script>
+
+</head>
+<body>
+<form id="fm">
+  <input type="button" class="incre" value="追加" />
+</form>
+</body>
+</html>
