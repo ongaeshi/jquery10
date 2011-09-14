@@ -9,7 +9,7 @@
   margin: 2px;
   height: 40px;
   list-style-type: none;
-  float: left;			/* 横並びを実現 */
+  float: left;			/* 左から順に配置 */
 }
 
 #list img {
