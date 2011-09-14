@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<style type="text/css">
+#box {
+  padding: 5px;  
+  position: absolute; /* 自由に移動できるように */
+  top: 20px;
+  left: 20px;
+  background-color: Silver;
+  list-style-type: none;
+  font-size: smaller;
+}
+
+#box li a {
+  text-decoration: none;
+  color: Black;
+}
+</style>
+<script src="../jquery-1.6.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () {
+  $(window).scroll(function () {
+    // フェードインすればそれなりに見えるかな？
+    $('#box').css({
+      top: $(this).scrollTop() + 20,
+      left: $(this).scrollLeft() + 20
+    });
+  });
+});
+</script>
+
+<title>イベント</title>
+</head>
+<body>
+<ul id="box">
+  <li><a href="top.html">トップページ</a></li>
+  <li><a href="faq.html">FAQコーナー</a></li>
+  <li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+<div id="main">
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+  <p>jQueryのパッケージは、production、developmentという2種類の形式で提供されています。デフォルトではproductionが選択されていますが、四角のチェックボックスを選択することで、インストールする形式を変更することもできます。
+  </p>
+  <p>production（29KB, Minified and Gzipped）は、jQueryのコードから余計なコメントや改行、スペースを取り除いた小サイズの形式です。ダウンロード時間も短くてすむので、本番環境での利用に適しています。
+  </p>
+  <p>一方、development（214KB, Uncompressed Code）は、コメントや改行、スペースを含んだ非圧縮版の形式です。production版が30キロバイト弱であるのに対して、development版が210キロバイト強ですので、サイズは7倍以上ですが、その分、ソースコードが読みやすくなっていますので、jQueryの中身も意識しながら開発したいという人に向いています。
+</div>
+</body>
+</html>

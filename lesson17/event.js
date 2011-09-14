@@ -37,5 +37,9 @@ $(function() {
         });
       }
     });
+
+  $('#big').error(function() {
+    $(this).attr('src', '../images/noimg.jpg');
+  });
 });
 
