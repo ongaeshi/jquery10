@@ -1,14 +1,17 @@
 $(function() {
+  var onmousedown = function(e) {
+    if (e.which == 3) {
+      e.data.exp.css({
+        display: 'block',
+        top: e.pageY,
+        left: e.pageX
+      });
+    }
+    e.stopPropagation();
+  };
+  
   $(document)
-    .mousedown(function (e) {
-      if (e.which == 3) {
-        $('#menu').css({
-          display: 'block',
-          top: e.pageY,
-          left: e.pageX
-        });
-      }
-    })
+    .mousedown({exp: $('#menu')}, onmousedown)
     .click(function (e) {
       if (e.which == 1) {
         $('#menu').css('display', 'none');
@@ -19,15 +22,14 @@ $(function() {
     });
 
   $('table#data')
-    .mousedown(function (e) {
-      if (e.which == 3) {
-        $('#menu2').css({
-          display: 'block',
-          top: e.pageY,
-          left: e.pageX
-        });
+    .mousedown({exp: $('#menu2')}, onmousedown)
+    .click(function (e) {
+      if (e.which === 1) {
+        $('#menu2').css('display', 'none');
       }
-      e.stopPropagation();
+    })
+    .bind('contextmenu', function (e) {
+      e.preventDefault();
     });
   
 });
