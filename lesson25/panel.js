@@ -1,13 +1,16 @@
 $(function() {
-  $('#panel dd').hide();
+  $('#panel dd:gt(0)').hide();
   $('#panel dt')
     .click(function (e) {
-      var d = $('+dd', this);
-      if (d.css('display') === 'block') {
-        d.slideUp(200);
-      } else {
-        d.slideDown(200);
-      }
+      $('#panel dd').slideUp(500);     // 全てのパネルを閉じて 
+      $('+dd', this).slideDown(500);   // 選択パネルのみを表示
     })
   ;
+  
+  // $('#panel dd').hide();
+  // $('#panel dt')
+  //   .click(function (e) {
+  //     $('+dd', this).slideToggle(200);
+  //   })
+  // ;
 });
