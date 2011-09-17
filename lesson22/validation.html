@@ -14,7 +14,7 @@
     <form id="fm">
       <div class="field">
 	<label for="isbn">ISBNコード</label>
-	<input type="text" id="isbn" size="20" class="valid required regexp" data-pattern="[0-9]{1}-{0-9]{3,5}-[0-9]{3,5}-{0-9X]{1}" />
+	<input type="text" id="isbn" size="20" class="valid required regexp" data-pattern="[0-9]{1}-[x0-9]{3,5}-[0-9]{3,5}-[0-9X]{1}" />
       </div>
 
       <div class="field">
@@ -29,7 +29,7 @@
 
       <div class="field">
 	<label for="publish">出版社</label>
-	<input type="text" id="publish" class="valid inarray" data-option="翔泳社　技術評論社　秀和システム マイコミ" />
+	<input type="text" id="publish" class="valid inarray" data-option="翔泳社 技術評論社 秀和システム マイコミ" />
       </div>
 
       <div class="field">
