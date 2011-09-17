@@ -1,0 +1,19 @@
+#panel {
+  width: 300px;
+}
+
+/* タイトル箱を作る */
+#panel dt {
+  background-color: Silver;
+  cursor: pointer;
+  color: White;
+  background-image: url("../images/panel.jpg");
+  padding: 4px;
+}
+
+/* 銀色箱を作る */
+#panel dd {
+  border: solid 1px Silver;
+  margin: 0px;
+  padding: 10px;
+}
