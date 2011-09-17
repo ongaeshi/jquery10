@@ -19,7 +19,7 @@ $(function () {
     msgs = [];
     $('error_mark', this).remove();
 
-    $('.valid', this)
+    $('.valid', this)           // thisを基点に検索
       .removeClass('.error_field')
       .filter('.required')
       .each(function () {
