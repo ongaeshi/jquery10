@@ -18,10 +18,11 @@ end
 get '/' do
   p = {
     :appid   => 'gFLs9RCxg65wBLXYLsx8gELmJHpYa4dq8cg1bfxalTiYgOL7u0jPeW4VrmfY6H.Zvyqh',
-    :query   => params[:keywd],
+    :query   => escape(params[:keywd]),
     :start   => (params[:page].to_i - 1) * NUM + 1,
     :results => NUM,
   }
+  # puts p
 
   q = p.map{|k,v| "#{k}=#{v}"}.join('&')
   open("http://search.yahooapis.jp/VideoSearchService/V2/videoSearch?#{q}")
