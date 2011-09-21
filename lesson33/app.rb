@@ -26,5 +26,8 @@ get '/' do
 
   q = p.map{|k,v| "#{k}=#{v}"}.join('&')
   open("http://search.yahooapis.jp/VideoSearchService/V2/videoSearch?#{q}")
+
+  # ajaxErrorテストをするにはここをコメントアウト (エラーメッセージ：Internal Server Error)
+  # raise
 end
 

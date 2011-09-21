@@ -1,4 +1,4 @@
-$(function () {
+ï»¿$(function () {
   $('#prog')
     .ajaxStart(function() { $(this).show(); })
     .ajaxStop( function() { $(this).hide(); })
@@ -6,14 +6,14 @@ $(function () {
 
   $('#result')
     .ajaxError(function(e, xhr, opts, err) {
-      $(this).html('<strong>ƒGƒ‰[ƒƒbƒZ[ƒWF' + err + '</strong>');
+      $(this).html('<strong>ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ï¼š' + err + '</strong>');
     });
 
   $.ajaxSetup({
     cache: false
   });
   
-  // isNaN‚¾‚ÆAˆø”‚ª""‚Ì‚Éfalse‚ª•Ô‚Á‚Ä‚µ‚Ü‚¤‚Ì‚Åê—pŠÖ”‚ğì‚é
+  // isNaNã ã¨ã€å¼•æ•°ãŒ""ã®æ™‚ã«falseãŒè¿”ã£ã¦ã—ã¾ã†ã®ã§å°‚ç”¨é–¢æ•°ã‚’ä½œã‚‹
   var isNotANumber = function(v) {
     return isNaN(v) || v === "";
   };
@@ -35,7 +35,7 @@ $(function () {
         $('Result', data).each(function() {
           $('#result').append(
             $('<a></a>')
-              .attr('href', $('> Url', this).text()) //Thumbnail UrlãŒå¼•ã£ã‹ã‹ã‚‰ãªã„ã‚ˆã†ã« '> Url'
+              .attr('href', $('> Url', this).text())
               .append(
                 $('<img>')
                   .addClass('thumb')
