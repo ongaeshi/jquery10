@@ -1,4 +1,18 @@
 $(function () {
+  $('#prog')
+    .ajaxStart(function() { $(this).show(); })
+    .ajaxStop( function() { $(this).hide(); })
+  ;
+
+  $('#result')
+    .ajaxError(function(e, xhr, opts, err) {
+      $(this).html('<strong>エラーメッセージ：' + err + '</strong>');
+    });
+
+  $.ajaxSetup({
+    cache: false
+  });
+  
   // isNaNだと、引数が""の時にfalseが返ってしまうので専用関数を作る
   var isNotANumber = function(v) {
     return isNaN(v) || v === "";

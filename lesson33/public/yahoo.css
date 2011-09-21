@@ -5,6 +5,10 @@ img.thumb {
   margin: 15px;
 }
 
+#prog {
+  display: none;
+}
+
 #pager {
   text-align: center;
 }
