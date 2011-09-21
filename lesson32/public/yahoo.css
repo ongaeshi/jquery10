@@ -4,3 +4,14 @@ img.thumb {
   border: none;
   margin: 15px;
 }
+
+#pager {
+  text-align: center;
+}
+
+.pager_link {
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid Black;
+  background-color: #cff;
+}
