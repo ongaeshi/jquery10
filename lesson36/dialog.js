@@ -4,8 +4,8 @@ $(function() {
     height: 450,
     autoOpen: false,
     modal: true,
-    show: 'bounce',
-    hide: 'explode',
+    show: 'clip',
+    // hide: 'fade',
     buttons: {
       'ダウンロード': function() { location.href = 'http://jqueryui.com/download'; },
       '閉じる': function() { $(this).dialog('close'); }
