@@ -35,6 +35,7 @@
         $('Result', data).each(function() {
           $('#result').append(
             $('<a></a>')
+              .addClass('zoombox')
               .attr('href', $('> Url', this).text())
               .append(
                 $('<img>')
@@ -62,6 +63,8 @@
             );
           }
         }
+
+        $('a.zoombox').zoombox();
       });
     e.preventDefault();
   };
