@@ -1,0 +1,21 @@
+img.thumb {
+  width: 100px;
+  height: 100px;
+  border: none;
+  margin: 15px;
+}
+
+#prog {
+  display: none;
+}
+
+#pager {
+  text-align: center;
+}
+
+.pager_link {
+  margin: 5px;
+  padding: 2px;
+  border: 1px solid Black;
+  background-color: #cff;
+}
