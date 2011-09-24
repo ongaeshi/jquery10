@@ -39,7 +39,7 @@ SRC = {
 }
 
 def hash2json(src)
-  src.map{|key, value| {:id => value, :label => key, :key => key} }.to_json
+  src.map{|key, value| {:id => value, :label => key, :value => key} }.to_json
 end
 
 SRC2JSON = SRC.map{|key, value| {:id => value, :label => key, :key => key} }
