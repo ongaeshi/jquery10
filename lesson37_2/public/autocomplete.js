@@ -118,7 +118,7 @@ $(function () {
   ];
 
   $('#keyword').autocomplete({
-    source: dict,
+    source: 'autocomplete',
     delay: 500,
     minLength: 1,
     select: function(e, ui) {
