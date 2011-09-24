@@ -5,19 +5,7 @@ $(function () {
       { query: $('#keywd').val() },
       function (data) {
         $('#result').empty();
-        $.each(data.Result, function () {
-          $('#result').append(
-              $('<dt></dt>').append(
-                $('<a></a>')
-                  .attr('href', this.Url)
-                  .html(this.Title)
-              )
-              .append(
-                $('<dd></dd>').html(this.Description)
-              )
-            );
-          // console.log(this);
-        });
+        $('#template').tmpl(data.Result).appendTo('#result');
       }
     );
   });
