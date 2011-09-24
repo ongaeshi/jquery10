@@ -17,7 +17,8 @@
     <dl id="result"></dl>
     <script id="template" type="text/x-jquery-tmpl">
       <dt><a href="${Url}">${Title}</a></dt>
-      <dd>${Description}</dd>
+      <dd>${Description}
+	{{if RssUrl}}<a href=${RssUrl}> [RSS] </a>{{/if}}</dd>
     </script>
   </body>
 </html>
