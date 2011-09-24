@@ -42,7 +42,9 @@ def hash2json(src)
   src.map{|key, value| {:id => value, :label => key, :value => key} }.to_json
 end
 
-SRC2JSON = SRC.map{|key, value| {:id => value, :label => key, :key => key} }
+def include_all?(src, keys)
+  keys.all?{|v| src.include? v}
+end
 
 get '/' do
   redirect "autocomplete.html"
@@ -50,5 +52,7 @@ end
 
 get '/autocomplete' do
   term = params['term'].downcase
-  hash2json(SRC.find_all{|v| v[0].downcase.include? term })
+  keys = term.split
+
+  hash2json(SRC.find_all{|v| include_all?(v[0].downcase, keys) })
 end
